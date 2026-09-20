@@ -65,9 +65,27 @@
 
   programs.ssh = {
     enable = true;
+
     matchBlocks."*".extraOptions = {
       AddKeysToAgent = "yes";
       ServerAliveInterval = "60";
+    };
+
+    matchBlocks."code.siemens.com" = {
+      user = "git";
+      identityFile = "~/.ssh/id_rsa_code_siemens_com";
+    };
+
+    # GitHub over 443 - SSH-over-HTTPS endpoint, for networks that block
+    # outbound port 22. Carried over from the Mac config.
+    matchBlocks."github.com" = {
+      hostname = "ssh.github.com";
+      port = 443;
+      user = "git";
+      identityFile = "~/.ssh/id_ed25519";
+      identitiesOnly = true;
+      serverAliveInterval = 900;
+      extraOptions.TCPKeepAlive = "yes";
     };
   };
 }
