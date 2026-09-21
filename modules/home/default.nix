@@ -4,6 +4,8 @@
   imports = [
     ./shell.nix
     ./git.nix
+    ./ai-dotfiles.nix
+    ./spacemacs.nix
   ];
 
   programs.home-manager.enable = true;

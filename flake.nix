@@ -12,6 +12,19 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # Read-only source for shared Mac dotfiles and tool configuration.
+    gmv-mac = {
+      url = "github:markov-g/gmv-nix-darwin/mac-mini";
+      flake = false;
+    };
+
+    # Pinned Spacemacs source; Home Manager materializes it into a writable
+    # runtime directory because Emacs and its package manager write there.
+    spacemacs = {
+      url = "github:syl20bnr/spacemacs/develop";
+      flake = false;
+    };
+
     # Rust toolchain channels (stable/beta/nightly, per-project via rust-toolchain.toml)
     rust-overlay = {
       url = "github:oxalica/rust-overlay";

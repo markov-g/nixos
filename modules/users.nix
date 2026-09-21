@@ -30,7 +30,7 @@
     # immediately. Get it with: cat ~/.ssh/id_ed25519.pub
     openssh.authorizedKeys.keys = [
       # "ssh-ed25519 AAAA... you@your-mac"
-      ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILv4gfqjm2qr2iU+P0RSYgf9WxLjW+bdeSZ6Cz4k05ua r1pp3r@r1pp3r
+      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILv4gfqjm2qr2iU+P0RSYgf9WxLjW+bdeSZ6Cz4k05ua r1pp3r@r1pp3r"
     ];
   };
 

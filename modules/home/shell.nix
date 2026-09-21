@@ -53,6 +53,9 @@
       # containers
       d = "podman";
       dc = "podman-compose";
+
+      # Spacemacs runs as the Nix-provided Emacs configuration.
+      spacemacs = "emacs";
     };
 
     initContent = lib.mkOrder 1000 ''

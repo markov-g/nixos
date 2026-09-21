@@ -1,5 +1,22 @@
 {
   "nodes": {
+    "gmv-mac": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1789753172,
+        "narHash": "sha256-OtoYYD+HiMkVnSQCFFA8bcJSvXpCw7/xcCjJzWcXeqo=",
+        "owner": "markov-g",
+        "repo": "gmv-nix-darwin",
+        "rev": "91e1f2ffba3a509cb68a9bbf77f92f591c565645",
+        "type": "github"
+      },
+      "original": {
+        "owner": "markov-g",
+        "ref": "mac-mini",
+        "repo": "gmv-nix-darwin",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -55,10 +72,12 @@
     },
     "root": {
       "inputs": {
+        "gmv-mac": "gmv-mac",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",
-        "rust-overlay": "rust-overlay"
+        "rust-overlay": "rust-overlay",
+        "spacemacs": "spacemacs"
       }
     },
     "rust-overlay": {
@@ -78,6 +97,23 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "spacemacs": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1789496649,
+        "narHash": "sha256-7twx8ByqA+Lu55ED6hk0HwwDbbT7pG70qmOZ4uXJ04E=",
+        "owner": "syl20bnr",
+        "repo": "spacemacs",
+        "rev": "ab5bb4cecff218d30c21fc4204260412c7ce8abd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "syl20bnr",
+        "ref": "develop",
+        "repo": "spacemacs",
         "type": "github"
       }
     }
