@@ -4,3 +4,5 @@ result-*
 *.hm-bak
 configuration.nix.pre-flake
 flake.nix.with-omarchy
+!AGENTS.md
+!CLAUDE.md
