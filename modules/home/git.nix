@@ -82,7 +82,7 @@
       hostname = "ssh.github.com";
       port = 443;
       user = "git";
-      identityFile = "~/.ssh/id_ed25519";
+      identityFile = "~/.ssh/id_rsa";
       identitiesOnly = true;
       serverAliveInterval = 900;
       extraOptions.TCPKeepAlive = "yes";
